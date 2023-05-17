@@ -1,4 +1,4 @@
-<// <---------- RECTANGLE EXAMPLE 1 ---------->
+// <---------- RECTANGLE EXAMPLE 1 ---------->
 
 #include<stdio.h>
 #include<iostream>
