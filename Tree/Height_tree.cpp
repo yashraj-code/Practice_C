@@ -1,5 +1,7 @@
 /*
 Height of Binary Tree
+Complexity - O(n)
+As we are visiting each and every node
 */
 
 /*
