@@ -7,6 +7,7 @@ void selection_sort(int a[], int size)
     // temporary variable to the store the position of minimum element
     int min;
     
+    // till size-1 as last element will automatically be sorted 
     for(int i=0;i<size-1;i++)
     {
         min=i;
