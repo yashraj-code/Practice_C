@@ -13,7 +13,7 @@ void insertion_sort(int arr[],int size)
     for(int step=1;step<size;step++)
     {
         int key=arr[step];
-        int j=step-1;
+        int j=step-1;       //J is there so that we can iterate left
 
     // It will enter the loop only if the element on adjacent left is greater than it (key) 
     // if the element is greater then enter the loop &&
