@@ -9,18 +9,22 @@ using namespace std;
 
 void removeX(char s[])
 {
-    if(s[0]=='\0')  {removeX(s+1)}
+    if(s[0]=='\0') {return;}
+
+    if(s[0]!='x')  
+        {removeX(s+1);}
     else 
     {
         int i=1;        // we used this here not in for because we want its value further also
         //shift all the characters
-        for(; s[i]!='\0'; i++)   //null chararcter is left
+        for(; s[i]!='\0'; i++)   //null chararcter is right
             {s[i-1]=s[i];}
         
         //to shift null character as well
         s[i-1]=s[i];
+        removeX(s);
     }
-    removeX(s);
+    
 }
 
 
