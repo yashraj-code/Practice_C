@@ -29,7 +29,7 @@ void print_sub_sequence(string input , string output)
 
 int main()
 {
-    cout<<"Enter String -> "
+    cout<<"Enter String -> ";
     string input;
     cin>>input;
     
