@@ -14,7 +14,7 @@ int knapSackRec(int W, int wt[], int val[], int n, vector<vector<int>> &dp)
 	if (dp[n][W] != -1) 
 		return dp[n][W]; 
 
-	if (wt[n] > W) 
+	if (wt[n-1] > W) 
     { 
 
 		// Store the value of function call 
@@ -24,7 +24,7 @@ int knapSackRec(int W, int wt[], int val[], int n, vector<vector<int>> &dp)
 	} 
 	else { 
 		// Store value in a table before return 
-		dp[n][W] = max(val[n] + knapSackRec(W - wt[n], wt, val, n - 1, dp), 
+		dp[n][W] = max(val[n-1] + knapSackRec(W - wt[n-1], wt, val, n - 1, dp), 
 					            knapSackRec(W, wt, val, n - 1, dp)); 
 
 		// Return value of table after storing 

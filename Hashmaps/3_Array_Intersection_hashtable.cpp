@@ -10,12 +10,16 @@ The intersection elements printed would be in the order they appear in the first
 
 Sample Input 1 :
 2
+
 6
 2 6 8 5 4 3
+
 4
 2 3 4 7 
+
 2
 10 10
+
 1
 10
 

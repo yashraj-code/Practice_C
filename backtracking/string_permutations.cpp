@@ -1,3 +1,4 @@
+// # this uses recursion only not bracktracking
 #include<string>
 #include<vector>
 #include<iostream>
@@ -30,12 +31,15 @@ void permute(string ip, string op, vector<string> &ans)
 }
 
 // Driver Code 
-vector<string> main() 
+int main() 
 { 
     string str = "ABC"; 
     vector<string> v;
     // ip = str
     // op = ""
     permute(str,"",v);
-    return v; 
+    for(auto i:v)
+    {cout<<i<<", ";}
+
+    return 0;
 } 

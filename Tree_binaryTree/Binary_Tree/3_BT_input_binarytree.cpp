@@ -25,7 +25,7 @@ using namespace std;
     cout<<"\nEnter Data ";
     cin>>rootData;
 
-    //base case
+    // base case
     // dont call any further return
     if(rootData== -1)
     {return NULL;}

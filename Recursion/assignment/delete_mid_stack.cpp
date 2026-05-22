@@ -26,7 +26,7 @@ int main()
     stack.push(2);
     stack.push(15);
     int k = ((stack.size())/2)+1;
-    solve(stack,k)
+    solve(stack,k);
 
     return 0;
 }
